@@ -1,0 +1,81 @@
+body {
+    margin: 0; 
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    color: #2E354F;
+}
+
+/* Typography */
+
+h1, h2, strong {
+    /* mentioning here as well because in case Lato is already downloaded on
+    user's computer but with other font-weight, our font link font weight will
+    get ignored. Hence, need to mention specifically. */
+    font-weight: 900; 
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0; /* to control top and bottom space using only <header> padding */
+}
+
+h2 {
+    font-size: 24px;
+    color: #EF5839;
+}
+
+a {
+    color: #EF5839;
+}
+
+a:hover, a:focus {
+    color: #D4B44C;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.btn-accent {
+    background-color: #EF5839;
+    color: #FFF;
+}
+
+.btn-accent:hover {
+    background-color: #D4B44C;
+    color: #2E354F;
+}
+
+.btn-light {
+    background-color: #FFF;
+    color: #EF5839;
+}
+
+.btn-light:hover {
+    background-color: #999;
+    color: #2E354F;
+}
+
+/* Layout */
+header {
+    background-color: #2E354F;
+    padding: 45px 0; /* no padding on sides as that is to be controlled using only div.container margin*/
+    color: #FFF;
+}
+
+section {
+    padding: 45px 0; /* no padding on sides as that is to be controlled using only div.container margin*/
+}
+
+.section-two {
+    background-color: #2E354F;
+    color: #FFF;
+}
+
+.container {
+    width: 620px;
+    margin: 0 auto;  
+}
